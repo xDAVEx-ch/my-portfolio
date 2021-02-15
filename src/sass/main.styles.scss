@@ -1,0 +1,27 @@
+@charset 'utf-8';
+
+//Import Google's font families
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Roboto:wght@300&display=swap');
+
+//Set your brand colors
+$color-white: #FDFFFC; //Accent and titles
+$color-grey-dark: #909090; //Links
+$color-grey-light: #CBCBCB; //Sub-titles and paragraphs
+$color-purple-light: #28151F; //Header, footer and general layout
+$color-purple-dark: #1B0E15; //Body
+$color-yellow: #FFFF40; //Accent
+
+//Update some Bulma's variables
+$link: $color-grey-dark;
+$body-background-color: $color-purple-dark;
+$text: $color-grey-light;
+$success: $color-yellow;
+$primary: $color-purple-light;
+$info: $color-white;
+
+//Set your fonts families
+$family-secondary: 'Baloo 2', cursive; //Just in titles
+$family-primary: 'Roboto', sans-serif;// Rest of text
+
+//Bulma's styles
+@import '../../node_modules/bulma/bulma.sass';

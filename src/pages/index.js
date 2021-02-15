@@ -1,5 +1,7 @@
 import React from "react"
 
+import '../sass/main.styles.scss';
+
 export default function Home() {
-  return <div>Hello world!</div>
+  return <h1 className='is-family-secondary'>Hello world</h1>
 }
