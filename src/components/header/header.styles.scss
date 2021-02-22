@@ -1,0 +1,45 @@
+$color-white: #FDFFFC; //Accent and titles
+$color-grey-dark: #909090; //Links
+$color-grey-light: #CBCBCB; //Sub-titles and paragraphs
+$color-purple-light: #28151F; //Header, footer and general layout
+$color-purple-dark: #1B0E15; //Body
+$color-yellow: #FFFF40; //Accent
+
+#logo{
+    display: flex;
+    color: $color-white;
+    align-items: center;
+
+    span{
+        user-select: none;
+    }
+}
+
+.logo{ //svg internal class
+    width: 60px;
+    height: 60px;
+}
+
+.header{
+    padding: 10px 15px;
+    background-color: $color-purple-light;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item{
+    display: block;
+    width: auto;
+    margin-left: 15px;
+}
+
+.is--underline:hover{
+    border-bottom: 2px solid $color-white;
+}

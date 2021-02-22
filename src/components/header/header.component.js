@@ -1,16 +1,21 @@
 import React from 'react';
+import { Link } from "gatsby";
 
-import MyIcon from '../../assests/svg/logo.svg';
+import Logo from '../../assests/svg/logo.svg';
+
+import './header.styles.scss';
 
 const Header = () =>(
-  <header>
+  <header className='header header--fix-top'>
     <nav className='navbar is-primary' role='navigation' aria-label='main navigation'>
-      <div className='navbar-brand'>
+      <div className='navbar-brand is-align-items-center'>
 
-        <a className='navbar-item' href='ttps://bulma.io'>
-          <div style={{ width: '128px'}}><MyIcon /></div>
+        <div id='logo'>
+          <Link to='/'>
+            <Logo />
+          </Link>
           <span className='is-family-secondary is-size-3'>Dave</span>
-        </a>
+        </div>
 
         <span role='button' className='navbar-burger' aria-label='menu' aria-expanded='false'>
           <span aria-hidden='true'></span>
@@ -19,13 +24,17 @@ const Header = () =>(
         </span>
       </div>
 
-      <div id='navbarBasicExample' class='navbar-menu'>
+      <div id='navbarBasic' className='navbar-menu'>
 
-        <div class="navbar-end">
-          <a href='#home' class='navbar-item'>Home</a>
-          <a href='#about' class='navbar-item'>About me</a>
-          <a href='#impossibleList' class='navbar-item'>Impossible list</a>
-          <a href='#projects' class='navbar-item'>Projects</a>
+        <div className='navbar-end'>
+
+          <div className='menu'>
+            <Link to='/home' className='menu-item is--underline has-text-white'>Home</Link>
+            <Link to='/about' className='menu-item is--underline has-text-white'>About me</Link>
+            <Link to='/impossibleList' className='menu-item is--underline has-text-white'>Impossible list</Link>
+            <Link to='/projects' className='menu-item is--underline has-text-white'>Projects</Link>
+          </div>
+          
         </div>
 
       </div>
