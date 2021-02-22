@@ -1,7 +1,15 @@
 import React from "react"
 
+import Layout from '../components/layout/layout.component';
+
 import '../sass/main.styles.scss';
 
 export default function Home() {
-  return <h1 className='is-family-secondary'>Hello world</h1>
+  return(
+    <>
+      <Layout>
+        <h2>Hello World</h2>
+      </Layout>
+    </>
+  );
 }
