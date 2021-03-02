@@ -12,7 +12,7 @@ const Header = () =>(
 
         <div id='logo'>
           <Link to='/'>
-            <Logo />
+            <Logo className='logo' />
           </Link>
           <span className='is-family-secondary is-size-3'>Dave</span>
         </div>
