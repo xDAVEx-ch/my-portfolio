@@ -29,10 +29,22 @@ const Header = () =>(
         <div className='navbar-end'>
 
           <div className='menu'>
-            <Link to='/home' className='menu-item is--underline has-text-white'>Home</Link>
-            <Link to='/about' className='menu-item is--underline has-text-white'>About me</Link>
-            <Link to='/impossibleList' className='menu-item is--underline has-text-white'>Impossible list</Link>
-            <Link to='/projects' className='menu-item is--underline has-text-white'>Projects</Link>
+            <Link
+              to='/home' 
+              className='menu-item is--underline has-text-white'>Home
+            </Link>
+            <Link
+              to='/about' 
+              className='menu-item is--underline has-text-white'>About me
+            </Link>
+            <Link
+              to='/impossibleList' 
+              className='menu-item is--underline has-text-white'>Impossible list
+            </Link>
+            <Link
+              to='/projects' 
+              className='menu-item is--underline has-text-white'>Projects
+            </Link>
           </div>
           
         </div>
